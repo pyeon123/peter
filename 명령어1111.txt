@@ -1,0 +1,595 @@
+A high-resolution, hyper-realistic first-person perspective of a motorcyclist riding a classic [오토바이 색상].
+The rider’s gloved hands grip the chrome handlebars, and the analog speedometers are clearly visible. 
+The motorcycle is cruising through [라이딩 환경], 
+with the light and atmosphere evoking a feeling of [분위기]. 
+The shot is immersive and cinematic, as if captured by a GoPro mounted on the rider’s chest.
+9:16 aspect ratio image.
+
+
+
+Create a cinematic short video based on the provided image.
+ The camera should slowly pan from left to right while keeping
+ the glowing mineral crystal island centered throughout the shot.
+ The lighting should highlight the shimmering surface of the island,
+ making it subtly glow as if it's infused with internal energy. 
+The city nightscape through the glass window remains steady in the background. 
+The overall ambiance is elegant, luxurious, and slightly mysterious. 
+Keep the motion smooth and slow, as if floating around the island.
+
+An educational manga for language learning in Japanese manga style. It features a cute, full-length high school girl.
+Background: A large, blank green chalkboard depicts a Korean-style high school classroom.
+
+A high school girl is holding chalk in one hand and looking straight ahead, giving an explanation.
+Bottom: An empty translation box:
+
+Style: Vibrant colors, humor from exaggerated character reactions, and a playful appreciation of cultural differences in the classroom.
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEet3k4mAR3DfBPByJNL_FtssLZ2NOlka8oIxdhpm5L00n3qXRqA8u10JEKJh-DKfmKnNOiKVUIFrIj1Em7cXiT6TEzE3N0Z4elFpWThBrPFlmPvw_1lRFjPy5MUzwcqfMxYAuAQWqgUroyaDZYbUEVtxnNLlvEByf-5Ta7h44N1DGuqeMRMTETALyxkQ/s1536/Copilot_20250816_153339.png" style="display: block; padding: 1em 0; text-align: center; clear: left; float: left;"><img alt="" border="0" width="320" data-original-height="1024" data-original-width="1536" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEet3k4mAR3DfBPByJNL_FtssLZ2NOlka8oIxdhpm5L00n3qXRqA8u10JEKJh-DKfmKnNOiKVUIFrIj1Em7cXiT6TEzE3N0Z4elFpWThBrPFlmPvw_1lRFjPy5MUzwcqfMxYAuAQWqgUroyaDZYbUEVtxnNLlvEByf-5Ta7h44N1DGuqeMRMTETALyxkQ/s320/Copilot_20250816_153339.png"/></a></div>
+<p>&nbsp;</p><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Word Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #word {
+      font-size: 2em;
+      margin: 20px;
+      font-weight: bold;
+    }
+    #input {
+      font-size: 1.5em;
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .keyboard {
+      margin: 5px 0;
+    }
+    .keyboard button {
+      font-size: 1.2em;
+      margin: 3px;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+    }
+    .keyboard button:active {
+      background: #ddd;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    /* 쇼핑몰 링크 스타일 */
+    .shop-link {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-top: 30px;
+      background-color: #FFFF00; /* 노란색 배경 */
+      color: #000000; /* 검은 글자 */
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+    }
+    .shop-link:hover {
+      background-color: #FFD700;
+      color: #000000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<h1>English Word Guessing Game</h1>
+<p>Type the <strong>Korean meaning</strong> of the English word shown below using the Korean keyboard!</p>
+
+<div id="word">Press "Next Word" to Start</div>
+<input type="text" id="input" placeholder="Type here..." readonly>
+<br>
+<button onclick="checkAnswer()">Check Answer</button>
+<button onclick="nextWord()">Next Word</button>
+
+<div id="message"></div>
+
+<h2>Korean Keyboard</h2>
+<!-- Consonants -->
+<div class="keyboard">
+  <button onclick="press('ㅂ')">ㅂ</button>
+  <button onclick="press('ㅈ')">ㅈ</button>
+  <button onclick="press('ㄷ')">ㄷ</button>
+  <button onclick="press('ㄱ')">ㄱ</button>
+  <button onclick="press('ㅅ')">ㅅ</button>
+  <button onclick="press('ㅁ')">ㅁ</button>
+  <button onclick="press('ㄴ')">ㄴ</button>
+  <button onclick="press('ㅇ')">ㅇ</button>
+  <button onclick="press('ㄹ')">ㄹ</button>
+  <button onclick="press('ㅎ')">ㅎ</button>
+  <button onclick="press('ㅋ')">ㅋ</button>
+  <button onclick="press('ㅌ')">ㅌ</button>
+  <button onclick="press('ㅊ')">ㅊ</button>
+  <button onclick="press('ㅍ')">ㅍ</button>
+</div>
+
+<!-- Vowels -->
+<div class="keyboard">
+  <button onclick="press('ㅛ')">ㅛ</button>
+  <button onclick="press('ㅕ')">ㅕ</button>
+  <button onclick="press('ㅑ')">ㅑ</button>
+  <button onclick="press('ㅐ')">ㅐ</button>
+  <button onclick="press('ㅔ')">ㅔ</button>
+  <button onclick="press('ㅗ')">ㅗ</button>
+  <button onclick="press('ㅓ')">ㅓ</button>
+  <button onclick="press('ㅏ')">ㅏ</button>
+  <button onclick="press('ㅣ')">ㅣ</button>
+  <button onclick="press('ㅜ')">ㅜ</button>
+  <button onclick="press('ㅠ')">ㅠ</button>
+  <button onclick="press('ㅡ')">ㅡ</button>
+</div>
+
+<!-- Special Keys -->
+<div class="keyboard">
+  <button onclick="backspace()">⌫ Backspace</button>
+  <button onclick="space()">␣ Space</button>
+  <button onclick="enter()">⏎ Enter</button>
+</div>
+
+<script src="https://unpkg.com/hangul-js"></script>
+<script>
+const words = [
+  { en: "apple", ko: "사과" },
+  { en: "school", ko: "학교" },
+  { en: "water", ko: "물" },
+  { en: "book", ko: "책" },
+  { en: "computer", ko: "컴퓨터" },
+  { en: "house", ko: "집" },
+  { en: "car", ko: "자동차" },
+  { en: "sun", ko: "태양" },
+  { en: "moon", ko: "달" },
+  { en: "flower", ko: "꽃" },
+  { en: "dog", ko: "개" },
+  { en: "cat", ko: "고양이" },
+  { en: "bird", ko: "새" },
+  { en: "fish", ko: "물고기" },
+  { en: "tree", ko: "나무" },
+  { en: "mountain", ko: "산" },
+  { en: "river", ko: "강" },
+  { en: "ocean", ko: "바다" },
+  { en: "sky", ko: "하늘" },
+  { en: "cloud", ko: "구름" },
+  { en: "rain", ko: "비" },
+  { en: "snow", ko: "눈" },
+  { en: "wind", ko: "바람" },
+  { en: "earth", ko: "지구" },
+  { en: "star", ko: "별" },
+  { en: "moonlight", ko: "달빛" },
+  { en: "sunshine", ko: "햇살" },
+  { en: "light", ko: "빛" },
+  { en: "dark", ko: "어두운" },
+  { en: "day", ko: "낮" },
+  { en: "night", ko: "밤" },
+  { en: "morning", ko: "아침" },
+  { en: "evening", ko: "저녁" },
+  { en: "week", ko: "주" },
+  { en: "month", ko: "월" },
+  { en: "year", ko: "년" },
+  { en: "today", ko: "오늘" },
+  { en: "tomorrow", ko: "내일" },
+  { en: "yesterday", ko: "어제" },
+  { en: "time", ko: "시간" },
+  { en: "clock", ko: "시계" },
+  { en: "watch", ko: "손목시계" },
+  { en: "calendar", ko: "달력" },
+  { en: "schedule", ko: "일정" },
+  { en: "plan", ko: "계획" },
+  { en: "event", ko: "행사" },
+  { en: "meeting", ko: "회의" },
+  { en: "party", ko: "파티" },
+  { en: "holiday", ko: "휴일" },
+  { en: "vacation", ko: "휴가" },
+  { en: "trip", ko: "여행" },
+  { en: "journey", ko: "여정" },
+  { en: "destination", ko: "목적지" },
+  { en: "ticket", ko: "티켓" },
+  { en: "flight", ko: "비행" },
+  { en: "train", ko: "기차" },
+  { en: "bus", ko: "버스" },
+  { en: "bicycle", ko: "자전거" },
+  { en: "motorcycle", ko: "오토바이" },
+  { en: "boat", ko: "배" },
+  { en: "ship", ko: "선박" },
+  { en: "airport", ko: "공항" },
+  { en: "station", ko: "역" },
+  { en: "stop", ko: "정류장" },
+  { en: "route", ko: "노선" },
+  { en: "map", ko: "지도" },
+  { en: "direction", ko: "방향" },
+  { en: "location", ko: "위치" },
+  { en: "address", ko: "주소" },
+  { en: "street", ko: "거리" },
+  { en: "road", ko: "도로" },
+  { en: "highway", ko: "고속도로" },
+  { en: "bridge", ko: "다리" },
+  { en: "tunnel", ko: "터널" },
+  { en: "building", ko: "건물" },
+  { en: "apartment", ko: "아파트" },
+  { en: "office", ko: "사무실" },
+  { en: "store", ko: "가게" },
+  { en: "shop", ko: "상점" },
+  { en: "restaurant", ko: "레스토랑" },
+  { en: "cafe", ko: "카페" },
+  { en: "bar", ko: "바" },
+  { en: "hotel", ko: "호텔" },
+  { en: "motel", ko: "모텔" },
+  { en: "hostel", ko: "호스텔" },
+  { en: "guesthouse", ko: "게스트하우스" },
+  { en: "room", ko: "방" },
+  { en: "bed", ko: "침대" },
+  { en: "chair", ko: "의자" },
+  { en: "table", ko: "테이블" },
+  { en: "sofa", ko: "소파" },
+  { en: "desk", ko: "책상" },
+  { en: "lamp", ko: "램프" },
+  { en: "window", ko: "창문" },
+  { en: "door", ko: "문" },
+  { en: "wall", ko: "벽" },
+  { en: "floor", ko: "바닥" },
+  { en: "roof", ko: "지붕" },
+  { en: "ceiling", ko: "천장" },
+  { en: "kitchen", ko: "부엌" },
+  { en: "bathroom", ko: "욕실" },
+  { en: "living room", ko: "거실" },
+  { en: "bedroom", ko: "침실" },
+  { en: "balcony", ko: "발코니" },
+  { en: "garden", ko: "정원" },
+  { en: "yard", ko: "마당" },
+  { en: "garage", ko: "차고" },
+  { en: "basement", ko: "지하실" },
+  { en: "attic", ko: "다락방" },
+  { en: "furniture", ko: "가구" },
+  { en: "appliance", ko: "가전제품" },
+  { en: "device", ko: "기기" },
+  { en: "tool", ko: "도구" },
+  { en: "equipment", ko: "장비" },
+  { en: "material", ko: "재료" },
+  { en: "product", ko: "제품" },
+  { en: "item", ko: "항목" },
+  { en: "thing", ko: "것" }
+];
+
+let currentWord = {};
+let buffer = [];
+
+function nextWord() {
+  currentWord = words[Math.floor(Math.random() * words.length)];
+  document.getElementById("word").innerText = currentWord.en;
+  document.getElementById("input").value = "";
+  document.getElementById("message").innerText = "";
+  buffer = [];
+
+  // 한국어 음성 3번 반복
+  if ('speechSynthesis' in window) {
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        const utter = new SpeechSynthesisUtterance(currentWord.ko);
+        utter.lang = 'ko-KR';
+        utter.rate = 0.8;
+        window.speechSynthesis.speak(utter);
+      }, i * 2200);
+    }
+  }
+}
+
+function checkAnswer() {
+  const userAnswer = document.getElementById("input").value.trim();
+  if (userAnswer === currentWord.ko) {
+    document.getElementById("message").innerText = "✅ Correct!";
+  } else {
+    document.getElementById("message").innerText = "❌ Wrong! The correct answer is: " + currentWord.ko;
+  }
+}
+
+function press(key) {
+  buffer.push(key);
+  updateInput();
+}
+
+function backspace() {
+  buffer.pop();
+  updateInput();
+}
+
+function space() {
+  buffer.push(" ");
+  updateInput();
+}
+
+function enter() {
+  checkAnswer();
+}
+
+function updateInput() {
+  const combined = Hangul.assemble(buffer);
+  document.getElementById("input").value = combined;
+}
+
+// 자동 시작
+nextWord();
+</script>
+
+<!-- 쇼핑몰 이동 버튼 -->
+<a href="https://enstack.ph/lkstore" target="_blank" class="shop-link">
+  🛒 Learn Korean Mall, Philippines Shop Now
+</a>
+
+</body>
+</html>
+
+
+
+
+
+<p>&nbsp;</p><!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Korean Word Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: #fafafa;
+    }
+    h1 { margin-bottom: 8px; }
+    #word {
+      font-size: 2em;
+      margin: 16px 0 6px;
+      font-weight: bold;
+    }
+    #translation {
+      font-size: 1.1em;
+      margin: 4px 0;
+      color: #777;
+    }
+    #romanization {
+      font-size: 0.95em;
+      margin: 2px 0 12px;
+      color: #555;
+      font-style: italic;
+    }
+    #input {
+      font-size: 1.5em;
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .keyboard { margin: 6px 0; }
+    .keyboard button {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      margin: 3px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      cursor: pointer;
+      min-width: 50px;
+    }
+    .keyboard button span.roman {
+      font-size: 0.6em;
+      color: #555;
+    }
+    .keyboard button:active { background: #e8e8e8; }
+    #message {
+      margin-top: 14px;
+      font-weight: bold;
+      min-height: 24px;
+    }
+    .actions { margin: 10px 0 4px; }
+    button.action {
+      margin: 6px 5px;
+      padding: 10px 16px;
+      font-size: 1em;
+      border-radius: 10px;
+      border: none;
+      background: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,.15);
+    }
+    button.action:hover { background: #43a047; }
+    button.secondary {
+      background: #1976d2;
+    }
+    button.secondary:hover { background: #1669bb; }
+    button.neutral {
+      background: #616161;
+    }
+    button.neutral:hover { background: #555; }
+    .note {
+      font-size: 0.9em; color:#666; margin-top:8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Korean Word Guessing Game</h1>
+  <p>Type the <strong>Korean word</strong> using the Korean keyboard!</p>
+
+  <div id="word">Press "Next Word" to Start</div>
+  <div id="translation"></div>
+  <div id="romanization"></div>
+
+  <input type="text" id="input" placeholder="Type here..." readonly />
+  <div class="actions">
+    <button class="action" onclick="checkAnswer()">Check Answer</button>
+    <button class="action" onclick="nextWord()">Next Word</button>
+    <button class="action secondary" onclick="speakWord()">🔊 단어 읽기</button>
+    <button class="action neutral" id="enableAudioBtn" onclick="enableAudio()">🔓 Enable Sound (모바일용)</button>
+  </div>
+
+  <div id="message"></div>
+
+  <h2>Korean Keyboard</h2>
+
+  <!-- Consonants -->
+  <div class="keyboard" id="consonants"></div>
+  <!-- Vowels -->
+  <div class="keyboard" id="vowels"></div>
+  <!-- Special Keys -->
+  <div class="keyboard">
+    <button onclick="backspace()">⌫ Backspace</button>
+    <button onclick="space()">␣ Space</button>
+    <button onclick="enter()">⏎ Enter</button>
+  </div>
+
+  <div class="note">※ 모바일에서 소리가 안 나면, 먼저 위의 <b>Enable Sound</b> 버튼을 한 번 눌러주세요.</div>
+
+  <script src="https://unpkg.com/hangul-js"></script>
+  <script>
+    // ===== 학습 데이터 =====
+    const words = [
+      { en: "apple",    ko: "사과",   roman: "sa-gwa" },
+      { en: "school",   ko: "학교",   roman: "hak-gyo" },
+      { en: "water",    ko: "물",     roman: "mul" },
+      { en: "book",     ko: "책",     roman: "chaek" },
+      { en: "computer", ko: "컴퓨터", roman: "keom-pyu-teo" }
+    ];
+
+    let currentWord = {};
+    let buffer = []; // Hangul buffer
+
+    // ===== 자모 + 영어 발음 =====
+    const consonants = {
+      "ㄱ": "g", "ㄲ": "kk", "ㄴ": "n", "ㄷ": "d", "ㄸ": "tt", "ㄹ": "r/l",
+      "ㅁ": "m", "ㅂ": "b", "ㅃ": "pp", "ㅅ": "s", "ㅆ": "ss", "ㅇ": "ng",
+      "ㅈ": "j", "ㅉ": "jj", "ㅊ": "ch", "ㅋ": "k", "ㅌ": "t", "ㅍ": "p", "ㅎ": "h"
+    };
+    const vowels = {
+      "ㅏ":"a","ㅐ":"ae","ㅑ":"ya","ㅒ":"yae","ㅓ":"eo","ㅔ":"e","ㅕ":"yeo",
+      "ㅖ":"ye","ㅗ":"o","ㅛ":"yo","ㅜ":"u","ㅠ":"yu","ㅡ":"eu","ㅣ":"i"
+    };
+
+    // ===== 음성 합성 세팅 =====
+    let audioEnabled = false;
+    let voices = [];
+    function loadVoices() { voices = speechSynthesis.getVoices(); }
+    if ('speechSynthesis' in window) {
+      speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+    }
+
+    function enableAudio() {
+      audioEnabled = true;
+      document.getElementById('enableAudioBtn').disabled = true;
+      document.getElementById('enableAudioBtn').textContent = "✅ Sound Enabled";
+      safeSpeak("안녕하세요");
+      setTimeout(() => speechSynthesis.resume?.(), 0);
+    }
+
+    function getKoreanVoice() {
+      return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('ko')) || null;
+    }
+
+    function safeSpeak(text, opts = {}) {
+      if (!audioEnabled) return;
+      if (!('speechSynthesis' in window)) return;
+      try {
+        speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = "ko-KR";
+        const v = getKoreanVoice();
+        if (v) u.voice = v;
+        u.rate = opts.rate ?? 0.95;
+        u.pitch = opts.pitch ?? 1.0;
+        u.volume = opts.volume ?? 1.0;
+        speechSynthesis.speak(u);
+      } catch(e) {}
+    }
+
+    // ===== 게임 로직 =====
+    function nextWord() {
+      currentWord = words[Math.floor(Math.random() * words.length)];
+      document.getElementById("word").innerText = currentWord.ko;
+      document.getElementById("translation").innerText = "(" + currentWord.en + ")";
+      document.getElementById("romanization").innerText = currentWord.roman;
+      document.getElementById("input").value = "";
+      document.getElementById("message").innerText = "";
+      buffer = [];
+
+      setTimeout(() => safeSpeak(currentWord.ko, {rate:0.9}), 100);
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById("input").value.trim();
+      if (userAnswer === currentWord.ko) {
+        document.getElementById("message").innerText = "✅ Correct!";
+        safeSpeak(currentWord.ko, {rate:0.95});
+        setTimeout(nextWord, 2000);
+      } else {
+        document.getElementById("message").innerText =
+          "❌ Wrong! The correct answer is: " + currentWord.ko;
+        safeSpeak("다시 시도해 보세요.");
+      }
+    }
+
+    function press(key) {
+      buffer.push(key);
+      updateInput();
+      safeSpeak(key, {rate:1.0});
+    }
+
+    function backspace() { buffer.pop(); updateInput(); }
+    function space() { buffer.push(" "); updateInput(); }
+    function enter() { checkAnswer(); }
+
+    function updateInput() {
+      const combined = Hangul.assemble(buffer);
+      document.getElementById("input").value = combined;
+    }
+
+    function speakWord() {
+      if (!currentWord.ko) return;
+      safeSpeak(currentWord.ko, {rate:0.95});
+    }
+
+    // ====== 키보드 생성 ======
+    function renderKeyboard() {
+      const consonantDiv = document.getElementById("consonants");
+      const vowelDiv = document.getElementById("vowels");
+      for (const [ko, rom] of Object.entries(consonants)) {
+        const btn = document.createElement("button");
+        btn.innerHTML = `<span>${ko}</span><span class="roman">${rom}</span>`;
+        btn.onclick = () => press(ko);
+        consonantDiv.appendChild(btn);
+      }
+      for (const [ko, rom] of Object.entries(vowels)) {
+        const btn = document.createElement("button");
+        btn.innerHTML = `<span>${ko}</span><span class="roman">${rom}</span>`;
+        btn.onclick = () => press(ko);
+        vowelDiv.appendChild(btn);
+      }
+    }
+
+    window.addEventListener('load', () => {
+      renderKeyboard();
+      nextWord();
+    });
+  </script>
+</body>
+</html>
