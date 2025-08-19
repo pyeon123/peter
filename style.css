@@ -1,0 +1,225 @@
+/* Font, background, and basic colors */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #fafafa;
+    color: #333;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+p {
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* Category Buttons Grid */
+.category-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
+    gap: 12px;
+    margin: 25px auto;
+    max-width: 800px;
+}
+.category-buttons button {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.category-buttons button:hover {
+    background-color: #e9e9e9;
+    border-color: #007bff;
+}
+.category-buttons button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Game word display area */
+#word {
+    font-size: 2.2em; /* 한국어 문제 글자 크기 */
+    margin: 20px 0 5px; /* Reduced bottom margin */
+    font-weight: bold;
+    color: #0056b3;
+    min-height: 1.3em;
+}
+#translation {
+    font-size: 1.8em; /* 영어 해석 글자 크기 */
+    margin: 2px 0;
+    color: #777;
+}
+#romanization {
+    font-size: 1.6em; /* 한국어 발음표 글자 크기 */
+    margin: 2px 0 15px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Input field */
+#input {
+    font-size: 1.6em;
+    padding: 12px;
+    width: 85%;
+    max-width: 450px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+#input:focus {
+    border-color: #007bff;
+}
+
+/* Action buttons */
+.actions {
+    margin: 15px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+button.action {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,.15);
+    transition: background-color 0.2s, transform 0.1s;
+    flex-grow: 1;
+    max-width: 180px;
+}
+button.action:hover { filter: brightness(95%); }
+button.action:active { transform: translateY(1px); }
+
+.primary { background: #4CAF50; }
+.secondary { background: #1976d2; }
+.neutral { background: #616161; }
+
+/* Message and counter */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 28px;
+    font-size: 1.2em;
+}
+.counter {
+    font-size: 0.95em;
+    color:#555;
+    margin-top:8px;
+}
+
+/* Keyboard layout */
+h2 {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+.keyboard {
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.keyboard button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    min-width: 58px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    transition: background-color 0.1s, transform 0.1s;
+    flex-grow: 1;
+    max-width: 80px;
+}
+.keyboard button span.roman {
+    font-size: 0.65em;
+    color: #888;
+    line-height: 1;
+    margin-top: 3px;
+}
+.keyboard button:active {
+    background: #e8e8e8;
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+
+/* Special keys */
+.keyboard button[onclick="backspace()"],
+.keyboard button[onclick="space()"],
+.keyboard button[onclick="enter()"] {
+    min-width: 100px;
+    flex-grow: 1.5;
+    background: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Link style */
+.promo-link {
+    display: block;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffeb3b;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .category-buttons {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+@media (max-width: 480px) {
+    .category-buttons {
+        grid-template-columns: 1fr; /* 1 column on extra small screens */
+    }
+}
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    h1 { font-size: 1.8em; }
+    p { font-size: 1em; }
+    #word { font-size: 1.8em; } /* 모바일에서 한국어 문제 크기 */
+    #translation { font-size: 1.4em; } /* 모바일에서 영어 해석 크기 */
+    #romanization { font-size: 1.2em; } /* 모바일에서 발음표 크기 */
+    #input { font-size: 1.3em; padding: 10px; }
+    button.action { font-size: 1em; padding: 10px 15px; max-width: none; }
+    .keyboard button { font-size: 1.1em; padding: 10px 12px; min-width: 45px; max-width: none; }
+    .keyboard button span.roman { font-size: 0.55em; }
+    .keyboard button[onclick="backspace()"],
+    .keyboard button[onclick="space()"],
+    .keyboard button[onclick="enter()"] { min-width: 80px; }
+}

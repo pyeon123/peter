@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Korean Phrases Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Korean Drama Phrases Guessing Game (Part 1)</h1>
+    <p>Use the on-screen keyboard or your voice to enter the Korean phrase!</p>
+
+    <div class="category-buttons">
+        <button onclick="startGame('greetings')">Everyday Greetings</button>
+        <button onclick="startGame('dramafav')">K-Drama Favorites</button>
+        <button onclick="startGame('relationships')">Relationships & Feelings</button>
+        <button onclick="startGame('feelings')">Expressing Feelings</button>
+        <button onclick="startGame('travel')">Travel & Directions</button>
+        <button onclick="startGame('food')">Food & Dining</button>
+        <button onclick="startGame('shopping')">Shopping</button>
+        <button onclick="startGame('work')">Work & School</button>
+    </div>
+
+    <div id="word">Select a category to begin</div>
+    <div id="translation"></div>
+    <div id="romanization"></div>
+
+    <input type="text" id="input" placeholder="Enter here..." readonly />
+    <div class="actions">
+        <button class="action primary" onclick="checkAnswer()">Check Answer</button>
+        <button class="action primary" onclick="nextWord()">Next Phrase</button>
+        <button class="action secondary" onclick="speakWord()">🔊 Listen</button>
+        <button class="action secondary" onclick="startRecognition()">🎤 Speak Answer</button>
+    </div>
+
+    <div id="message"></div>
+    <div class="counter" id="counter"></div>
+
+    <h2>Korean Keyboard</h2>
+
+    <div class="keyboard" id="consonants"></div>
+    <div class="keyboard" id="vowels"></div>
+    <div class="keyboard">
+        <button onclick="backspace()" style="min-width: 120px;">⌫ Backspace</button>
+        <button onclick="space()" style="min-width: 120px;">␣ Space</button>
+        <button onclick="enter()" style="min-width: 120px;">⏎ Enter</button>
+    </div>
+
+    <a href="https://enstack.ph/lkstore" class="promo-link" target="_blank">
+        Learn korean mall / Philippines - Shop Now
+    </a>
+
+    <script src="https://unpkg.com/hangul-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
